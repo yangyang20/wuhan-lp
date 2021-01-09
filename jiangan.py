@@ -11,8 +11,10 @@ from selenium.webdriver.chrome.options import Options
 opts = Options()
 opts.headless = True
 
+drive_path='./chromedriver'
+
 baseUrl='https://wuhan.newhouse.fang.com'
-driver = webdriver.Chrome(options=opts)
+driver = webdriver.Chrome(executable_path=drive_path,options=opts)
 
 
 def parsePage():
@@ -88,7 +90,7 @@ def insterData(data):
                                  port=3306,
                                  user='root',
                                  password='393622951',
-                                 db='test',
+                                 db='wuhan_loupan',
                                  charset='utf8')
     # 获取游标
     cursor = connection.cursor()
