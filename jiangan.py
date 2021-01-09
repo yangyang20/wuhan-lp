@@ -87,7 +87,7 @@ def insterData(data):
     connection = pymysql.connect(host='localhost',
                                  port=3306,
                                  user='root',
-                                 password='root',
+                                 password='393622951',
                                  db='test',
                                  charset='utf8')
     # 获取游标
